@@ -1,18 +1,14 @@
-*.loa
-*.log
-*.lot
-*.lof
-*.aux
-*.out
-*.toc
-*.fdb_latexmk
-*.bbl
-*.bcf
-*.blg
-*.run.xml
-*.thm
-*.gnuplot
-*.synctex.gz
-*.synctex.gz(busy)
-*.auxlock
-cv-blx.bib
+# Generate image from pdf file with image magick:
+# convert -density 150 -quality 80 -flatten corleo-cv.pdf corleo-cv.png
+#
+# Ignore
+*
+
+# Allow
+!.gitignore
+!corleo-cv.cls
+!corleo-cv.tex
+!corleo-cv.pdf
+!corleo-cv.png
+!README.md
+!LICENSE

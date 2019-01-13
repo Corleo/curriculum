@@ -1,0 +1,142 @@
+%!TEX program = xelatex
+
+% Add 'print' as an option for printing document or
+% 'grayscale' as an option for grayscale document
+\documentclass[]{corleo-cv}
+
+\begin{document}
+
+\header{John Smith}%
+{Junior Software Engineer}%
+{}
+
+\begin{sideblock}
+    \sidesection{INTERESTS}
+    Software Engineer\\
+    Business Analyst
+
+    \sidesection{CONTACT}
+    \cellphone{+0 (000) 111 1111}\\
+    \email{john@smith.com}\\
+    ~\\
+    \address{213 4th St\\
+    Sunnyvale, CA 94089}[link]
+    \\~\\
+    \linkedin{john.smith}\\
+    \instagram{john.smith}\\
+    \facebook{john.smith}\\
+    \twitter{john.smith}\\
+    \github{john.smith}\\
+
+    \sidesection{Skills}
+    \sidesubsection{Language}
+    \setlength{\tabcolsep}{3pt}
+    \vartable{0.6}{ll}{
+        English: & Native\\
+        French: & Intermediate\\
+        Esperanto: & Intermediate
+    }
+
+    \sidesubsection{Programming}
+    \vartable{0.8}{lll}{
+        C/C++ & Python & Bash\\
+        JavaScript & HTML5 & CSS3\\
+        PHP & Ruby & Java\\
+        SQL & Lua & \LaTeX
+    }
+
+    \sidesubsection{OS}
+    \vartable{0.8}{lll}{
+        Windows: & Advanced\\
+        Linux: & Advanced\\
+        RTOS: & Advanced
+    }
+
+    \sidesubsection{Tools}
+    \begin{leftlist}
+        \item Word, Excel: Advanced
+        \item Others:
+            \vartable{0.73}{ll}{
+                MySQL & PostgreSQL\\
+                Microsoft SQL & VirtualBox\\
+                Git & Filezilla\\
+                Sublime Text & Vim\\
+                Word & Excel
+            }
+    \end{leftlist}
+\end{sideblock}
+
+% Main block --------------------------------------------------------
+\section{EDUCATION}
+
+\begin{entrylist}
+    \entry
+    {2011 \dashbarr 2012}
+    {Masters in Computer Science \& Engineering}
+    {Berkeley, California}
+    {University of California}
+
+    \entry
+    {06/2010}
+    {B.S. in Computer Science \& Engineering}
+    {Berkeley, California}
+    {University of California}
+\end{entrylist}
+
+%--------------------------------------------------------------------
+\section{EXPERIENCE}
+
+\begin{entrylist}
+    \entry
+    {2016 \dashbarr 2018}
+    {Google LLC}
+    {Mountain View, California}
+    {\emph{Software Engineer}
+    \begin{midleftlist}
+        \item \lipsum[1-7][6]
+        \item \lipsum[1-7][7]
+        \item \lipsum[1-7][8]
+        \item \lipsum[1-7][9]
+        \item \lipsum[1-7][10]
+    \end{midleftlist}
+    }
+
+    \entry
+    {2012 \dashbarr 2016}
+    {Facebook, Inc.}
+    {Menlo Park, California}
+    {\emph{Web Developer}
+    \begin{midleftlist}
+        \item \lipsum[1-7][1]
+        \item \lipsum[1-7][2]
+        \item \lipsum[1-7][3]
+        \item \lipsum[1-7][4]
+        \item \lipsum[1-7][5]
+    \end{midleftlist}
+    }
+\end{entrylist}
+
+%--------------------------------------------------------------------
+\section{SKILLS}
+
+\begin{entrylist}
+    \entry
+    {2011}
+    {Lorem Ipsum 1}
+    {California Lorem Ipsum Conference}
+    {\lipsum[1-7][11-12]}
+
+    \entry
+    {2010}
+    {Lorem Ipsum 2}
+    {Annual Lorem Ipsum Conference, Oregon}
+    {\lipsum[1-7][13-14]}
+\end{entrylist}
+
+%--------------------------------------------------------------------
+\section{INTERESTS}
+
+\textbf{professional:} \lipsum[1-7][15-17]\setline[.1]
+\textbf{personal:} \lipsum[1-7][18-20]
+
+\end{document}
